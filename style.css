@@ -93,10 +93,57 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation-name: ruota;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
+@keyframes ruota{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    15%{
+        transform: rotateZ(90deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    75%{
+        transform: rotateZ(270deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
 .ex-11-icon {
     font-size: 60px;
 }
+.ex-11-icon:hover {
+    animation-name: ruota-secondo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes ruota-secondo{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    15%{
+        transform: rotateZ(90deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    75%{
+        transform: rotateZ(270deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
